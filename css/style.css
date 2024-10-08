@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+   /* background-image: url('../img/back1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;*/
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* nav styles */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: rgb(5, 5, 116);
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+  }
+  
+  .nav__link {
+    position: fixed;
+    width: 94%;
+    top: 5rem;
+    left: 18px;
+    background-color: lightblue;
+  }
+  
+  .nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+  }
+  
+  .nav__link a:hover {
+    background-color: rgb(225, 240, 128);
+  }
+  
+  .hide {
+    display: none;
+  }
+
+  .bg-img {
+    top: 0;
+    left: 0;
+}
+.bg-img img {
+    width: 100%;
+    height: auto;
+}
+
+/* about section */
+.container .heading{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+.container .heading h1{
+    color: #131313;
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+.wrapper{
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    width: 50%;
+    margin: 0px 25px;
+    transition: 0.4s ease;
+}
+
+.content:hover{
+    transform: translateY(-10px);
+}
+
+.content h2{
+    font-size: 30px;
+    color: #fdae41;
+}
+
+.content p{
+    font-size: 19px;
+    color: #131313;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.content .btn{
+    position: relative;
+    margin-top: 30px;
+    text-decoration: none;
+    border: 2px solid #fdae41;
+    border-radius: 10px;
+    font-size: 19px;
+    color: #fdae41;
+    padding: 13px 16px;
+    display: inline-block;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.content .btn::before{
+    position: absolute;
+    content: '';
+    border: 1PX solid transparent;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fdae41;
+    z-index: -1;
+    transition: all 0.3s ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.5, 0.4, 0.10);
+    transform: scaleX(0);
+    border-radius: 10px;
+}
+.content .btn:hover{
+    color: #fff;
+}
+
+.content .btn:hover::before{
+    transform: scaleX(1);
+}
+
+.image{
+    width: 100%;
+    transition: 0.4s ease;
+}
+.image:hover{
+    transform: translateY(-10px);
+}
+.image img{
+    width: 100%;
+    height: auto;
+}
+
+/* footer section */
+footer {
+    background: #333;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 200px; /* Grow, shrink, and set a minimum width */
+    margin: 1rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 1rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 0.5px 0;
+        text-align: center;
+    
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .container .heading h1{
+        font-size: 30px;
+    }
+    .content, .image{
+        width: 100%;
+        margin-top: 30px;
+    }  
+    .content h2{
+        font-size: 25px;
+
+    }
+    .content .btn{
+        font-size: 15px;
+        padding: 12px 14px;
+    }
+
+    
+}
+
+
+  @media screen and (min-width: 600px) {
+    .nav__link {
+      display: block;
+      position: static;
+      width: auto;
+      margin-right: 20px;
+      background: none;
+    }
+  
+    .nav__link a {
+      display: inline-block;
+      padding: 15px 20px;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  }
+  

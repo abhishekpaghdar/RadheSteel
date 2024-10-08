@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>responsive navbar</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  </head>
+   <body>
+    <!--navbar-->
+    <header>
+      <nav class="nav">
+        <a href="index.html" class="logo">Radhe Steel</a>
+
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+
+        <div class="nav__link hide">
+          <a href="index.html">home</a>
+          <a href="about.html">about</a>
+          <a href="product.html">Product</a>
+          <a href="contact.html">contact</a>
+          
+        </div>
+      </nav>
+    </header>
+    <!--background image-->
+    <div class="bg-img">
+        <img src="img/back1.jpg">
+    </div>
+
+    <!--about section-->
+    <div class="container">
+        <div class="heading">
+            <h1>ABOUT US</h1>
+        </div>
+        <div class="wrapper">
+            <div class="content">
+                <h2>One stitch at a time, we create magic.</h2>
+                <p>Radhe Steel is a leading manufacturer of high quality steel products. We offer a wide range of
+                    products that cater to various industries, including construction, automotive, and aerospace. Our products are known for their durability, reliability, and excellent performance. We pride ourselves on providing our customers with the best quality products and services.</p>
+                <a href="about.html" class="btn">Read More...</a>
+            </div>
+            <div class="image">
+                <img src="img/about.png" alt="about us">
+            </div>
+        </div>  
+    </div>
+
+    <!-- slide bar starts -->
+ 
+<div class="heading" style="text-align: center; color: black;">
+    <h1 style="font-size: 2em; margin-top: 30px; margin-bottom: 20px;">Our Product </h1>
+  </div>
+  
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/slid1.jpg" alt="Los Angeles" class="d-block" style="width:1650px; height:600px; ">
+      </div>
+      <div class="carousel-item">
+        <img src="img/slid2.jpg" alt="Chicago" class="d-block" style="width:1650px; height:600px;">
+      </div>
+      <div class="carousel-item">
+        <img src="img/slid3.jpg" alt="New York" class="d-block" style="width:1650px; height:600px;">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!--contact section-->
+    <div class="heading" style="text-align: center; color: black;">
+        <h1 style="font-size: 2em; margin-top: 30px; margin-bottom: 20px;">Contact Us</h1>
+    </div>
+    <center>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.962475121225!2d72.65433907509188!3d23.025149979171978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8655e47d05d9%3A0xf281068279111a85!2sRadhe%20Steel!5e0!3m2!1sen!2sin!4v1727164895485!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+    </center>
+
+    <!--footer section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Radhe Steel</h3>
+                <p>Radhe Steel is a leading manufacturer of high quality steel products.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">about us</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><b>Address:</b> 1, Riddhi Estate Nr,Matangi Transport, Ambika Nagar Rd, GIDC Industrial Area, Odhav, Ahmedabad, Gujarat 382415.</p>
+                <p><b>Email:</b><a href="mailto:radhesteel@gmail.com">radhesteel@gmail.com</a></p>
+                <p><b>Phone:</b><a href="tel:+919427520610">+91 94275 20610</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+  </body>
+  <script src="js/script.js"></script>
+</html>
